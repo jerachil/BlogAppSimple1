@@ -19,7 +19,7 @@ const PostDetail = ({ post }) => {
             modifiedText = (<u key={index}>{text}</u>);
           }
         }
-    
+    console.log(post.author)
         switch (type) {
           case 'heading-three':
             return <h3 key={index} className="text-xl font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>;
